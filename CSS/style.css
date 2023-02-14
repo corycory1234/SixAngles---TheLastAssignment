@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.body{
+    width: 100%;
+}
+.wrap{
+    width: 1000px;
+    margin: auto;
+}
+
+/************************* HEADER *******************/
+.bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(246, 246, 246);
+}
+.bar ul{
+    float: right;
+    margin: 5px 15px 0 0;
+    font-weight: bold;
+}
+.bar ul li{
+    float:left;
+}
+.bar ul li img{
+    float:left;
+    margin-left: 10px;
+}
+.bar ul li span{
+    float: left;
+    margin-left: 5px;
+}
+.bar .fb span{
+    color: blue;
+    line-height: 1.1;
+}
+.bar .twitter span{
+    color: skyblue;
+    line-height: 1.1;
+}
+.bar .fb::after{
+    content:"|";
+    color:darkgray;
+    margin-left: 10px;
+}
+.bar ul li:hover{
+    border-bottom: 5px solid #45d9ad;
+    transition: .5s;
+}
+
+
+/************************* NAV導覽 *******************/
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.nav ul{
+    height: 50px;
+    display: flex;  
+    justify-content: space-around;
+    color: #45d9ad;
+    font-weight: bold;
+}
+.nav h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width: 200px;
+    height: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.nav ul li{
+    padding: 15px;
+    margin-left: 40px;
+}
+.nav ul li a{
+    display: block;
+    color: #45d9ad;
+}
+.nav ul li:hover{
+    border-bottom: 3px solid #45d9ad;
+    color: black;
+    transition: .3s;
+}
+
+
+/*************BANNER*******************/
+.banner{
+	width: 100%;
+	background-size: cover;
+    position: relative;
+}
+
+.banner h2{
+	position: absolute;
+	width: 100%;
+	font-size: 36px;
+	background-color: rgba(56, 52, 52, .2);
+	color: white;
+	top: 120px;
+	left: 0;
+	padding: 20px;
+    z-index: 100;
+}
+
+
+/*******************課程內容***************/
+.course-item h2{
+	text-align: center;
+}
+.course-item p{
+	line-height: 1.6;
+    /* text-align: center; */
+    padding: 0px 5px;
+}
+.course{
+	display: flex;
+	justify-content: space-around;
+}
+.course-item{
+	width: 31%;
+
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+	box-shadow: 0px 2px 4px rgb(205, 201, 201);
+}
+.course-item img{
+    vertical-align: middle;
+}
+.content{
+	margin: 20px 0 20px 0;
+}
+.course-item .item-txt{
+    margin:0 10px;
+}
+.course-item .item-txt li{
+    text-align: left;
+    list-style:outside;
+    margin-left: 21px;
+}
+
+/*******************TABLE表格********************/
+.table-title{
+    margin:  50px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    width: 90%;
+    margin:  0 auto;
+    border-top: 1px solid lightgray;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+table th,td{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-spacing: 0;
+    padding: 5px;
+}
+table th{
+    background-color: rgb(234, 234, 234);
+    text-align: left;
+}
+.greencolor{
+    color:#099164
+}
+
+ 
+
+/*******************FORM表單********************/
+form{
+    width: 100%;
+    margin: 50px 0 0 0;
+    background: -webkit-linear-gradient(top, #00654a,#029573);
+    color: #fff;
+}
+form h2{
+    padding-top: 30px;
+    text-align: center;
+
+}
+textarea{
+    margin:20px 0;
+    resize: none;
+    width: 45%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.info{
+    margin: 0 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start
+}
+.info input{
+    width: 450px;
+    border-radius: 5px;
+    height: 30px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+.info input:last-child{
+    border-radius: 5px;
+    background-color: #00cc98;
+    color:white;
+    width: 70px;
+    align-self: flex-end;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info textarea:focus{
+    background-color: rgb(224, 179, 174);
+    transition: .5s;
+}
+.personal-info input:not(:last-child):focus{
+    background-color: rgb(224, 179, 174);
+    transition: .5s;
+}
+
+
+/****************表尾********************/
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer span{
+    color:rgb(218, 44, 73)
+}
