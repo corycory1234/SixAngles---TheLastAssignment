@@ -5,11 +5,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-.body{
-    width: 100%;
-}
 .wrap{
-    width: 1000px;
+    width: 1024px;
     margin: auto;
 }
 
@@ -126,6 +123,11 @@
 	display: flex;
 	justify-content: space-around;
 }
+.course .clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .course-item{
 	width: 31%;
 
@@ -193,6 +195,7 @@ textarea{
     margin:20px 0;
     resize: none;
     width: 45%;
+    height: 242px;
     border-radius: 5px;
     outline: none;
 }
@@ -229,6 +232,11 @@ textarea{
     text-indent: 0;
     cursor: pointer;
 }
+.info input:last-child:hover{
+    background-color: #4d76b5;
+    color: black;
+}
+
 
 form label{
     font-weight: bold;
